@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A3 Assigment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/LogIn.js"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-800 flex-col">
+
+<h6 class="mb-2 text-slate-300 text-xl font-semibold">
+    Login Form
+</h6>
+
+
+<div class="w-full max-w-sm min-w-[200px] space-y-4">
+
+    <div>
+        <input id="username"
+               class="w-full bg-transparent placeholder:text-slate-400 text-slate-300 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+               placeholder="Enter Username">
+    </div>
+    <div>
+        <input id="password"
+               class="w-full bg-transparent placeholder:text-slate-400 text-slate-300 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+               type="password" placeholder="Enter Password">
+    </div>
+
+
+    <div>
+        <button id ="loginButton" class="w-full rounded-md bg-green-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-green-700 focus:shadow-none active:bg-green-700 hover:bg-green-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+            Login
+        </button>
+    </div>
+</div>
+</body>
+</html>
