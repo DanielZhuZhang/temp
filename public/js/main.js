@@ -10,6 +10,11 @@ const submit = async function (event) {
     const inputAge = document.querySelector("#yourage").value;
     const inputMajor = document.querySelector("#yourmajor").value;
 
+    if (isNaN(inputAge) || inputAge.trim() === "") {
+        alert("Please enter a valid number for age.");
+        return; // Exit the function
+    }
+
     const jsonData = {
         UserName: storedUsername,
         PassWord: storedPassword,
@@ -17,6 +22,7 @@ const submit = async function (event) {
         Age: inputAge,
         Major: inputMajor
     };
+
     const body = JSON.stringify(jsonData);
     console.log(body);
 
