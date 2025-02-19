@@ -1,6 +1,6 @@
 import "../app/globals.css";
 import { SessionProvider } from "next-auth/react";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar.jsx";
 
 function MyApp({ Component, pageProps }) {
     return (
