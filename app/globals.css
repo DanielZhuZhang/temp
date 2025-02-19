@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #ededed;
+  }
+}
+
+/* Apply Gradient Properly */
+body {
+  background-image: linear-gradient(to right, #3b82f6, #9333ea); /* Same as Tailwind `from-blue-500 to-purple-600` */
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
